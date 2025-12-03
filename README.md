@@ -13,7 +13,7 @@ Built with HTML5, CSS Grid/Flexbox, and vanilla JavaScript for optimal performan
 ## Getting Started
 
 1. Clone the repo:  
-git clone https://github.com/yourusername/robeurope.git
+```git clone https://github.com/yourusername/robeurope.git```
 
 2. Open `index.html` in a browser.
 3. Contribute events via pull requests!
