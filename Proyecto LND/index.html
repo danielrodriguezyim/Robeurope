@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RobEurope</title>
+    <link rel="icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/style-redesign.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="main-nav">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-rob">ROB</span><span class="logo-europe">EUROPE</span>
+            </div>
+
+            <nav class="nav-links">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#videos" class="nav-link">Videos</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#gallery" class="nav-link">Gallery</a>
+                <a href="#feedback" class="nav-link">Feedback</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+
+            <div class="nav-menu" id="nav-menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section with Particle Animation -->
+    <section class="hero-section" id="home">
+        <canvas id="particle-canvas"></canvas>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Inspiring the Future</span>
+                <span class="title-line">of Robotics</span>
+            </h1>
+            <p class="hero-subtitle">
+                RobEurope brings together young innovators across Europe to explore cutting-edge robotics,
+                fostering creativity and technical excellence through hands-on competition.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary" onclick="scrollToSection('about')">Learn more</button>
+                <button class="btn btn-secondary" onclick="scrollToSection('contact')">Contact us</button>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Video Carousel Section -->
+    <section class="video-section" id="videos">
+        <div class="section-container">
+            <h2 class="section-title">Experience RobEurope</h2>
+            <p class="section-subtitle">Watch highlights from our latest competitions and events</p>
+
+            <div class="video-carousel">
+                <button class="carousel-btn carousel-btn-prev" id="prevBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="15 18 9 12 15 6"></polyline>
+                    </svg>
+                </button>
+
+                <div class="video-container">
+                    <div class="video-wrapper">
+                        <iframe id="video-frame" src="https://www.youtube.com/embed/YbIII8HvBwc"
+                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                </div>
+
+                <button class="carousel-btn carousel-btn-next" id="nextBtn">
+                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polyline points="9 18 15 12 9 6"></polyline>
+                    </svg>
+                </button>
+            </div>
+
+            <div class="carousel-dots" id="carouselDots"></div>
+        </div>
+    </section>
+
+    <!-- About Section with Scroll Animation -->
+    <section class="about-section-scroll" id="about">
+        <div class="about-scroll-container">
+            <div class="about-sticky-content">
+                <div class="about-text-wrapper">
+                    <span class="section-label">About RobEurope</span>
+                    <div class="scroll-indicator">
+                        <div class="mouse">
+                            <div class="wheel"></div>
+                        </div>
+                    </div>
+                    <h2 class="about-scroll-title" id="aboutTitle">Hands-On Learning</h2>
+                    <p class="about-scroll-description" id="aboutDescription">
+                        Experience real robotics challenges that develop practical engineering skills. Our competitions
+                        provide students with hands-on opportunities to design, build, and program robots that solve
+                        complex problems. Through iterative design processes and technical challenges, participants
+                        gain invaluable experience in mechanical engineering, electronics, and programming.
+                    </p>
+                </div>
+                <div class="about-scroll-image">
+                    <img id="aboutImage" src="./images/picture1.jpg" alt="RobEurope">
+                </div>
+            </div>
+        </div>
+
+        <!-- Mobile version -->
+        <div class="about-mobile-version">
+            <span class="section-label">About RobEurope</span>
+            <h2 class="section-title">Empowering Young Minds Through Robotics</h2>
+
+            <div class="about-mobile-item">
+                <div class="about-mobile-image">
+                    <img src="./images/picture1.jpg" alt="Hands-On Learning">
+                </div>
+                <div class="about-mobile-text">
+                    <h3>🤖 Hands-On Learning</h3>
+                    <p>Experience real robotics challenges that develop practical engineering skills. Our competitions
+                        provide students with hands-on opportunities to design, build, and program robots that solve
+                        complex problems.</p>
+                </div>
+            </div>
+
+            <div class="about-mobile-item">
+                <div class="about-mobile-image">
+                    <img src="./images/picture2.jpg" alt="International Network">
+                </div>
+                <div class="about-mobile-text">
+                    <h3>🌍 International Network</h3>
+                    <p>Connect with schools and students across Europe. Join a vibrant community of robotics
+                        enthusiasts,
+                        share knowledge, and collaborate on innovative projects that transcend borders and cultures.</p>
+                </div>
+            </div>
+
+            <div class="about-mobile-item">
+                <div class="about-mobile-image">
+                    <img src="./images/picture3.jpg" alt="Competitive Excellence">
+                </div>
+                <div class="about-mobile-text">
+                    <h3>🏆 Competitive Excellence</h3>
+                    <p>Showcase your skills in prestigious robotics competitions. Compete against the best teams in
+                        Europe,
+                        earn recognition for your achievements, and push the boundaries of what's possible in robotics.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Gallery Section -->
+    <section class="gallery-section" id="gallery">
+        <div class="section-container">
+            <span class="section-label">Our Community</span>
+            <h2 class="section-title">Built for Innovators in the Digital Era</h2>
+            <p class="section-subtitle">
+                Join a vibrant ecosystem of students, educators, and robotics enthusiasts shaping tomorrow's technology
+            </p>
+
+            <div class="gallery-grid">
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/20211.jpg" alt="Competition Moment">
+                    <div class="gallery-overlay">
+                        <h3>Competition Day</h3>
+                        <p>Teams showcasing their innovative robots</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/20212.jpg" alt="Team Collaboration">
+                    <div class="gallery-overlay">
+                        <h3>Collaborative Spirit</h3>
+                        <p>Students working together on complex challenges</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/20213.jpg" alt="Technical Workshop">
+                    <div class="gallery-overlay">
+                        <h3>Technical Workshops</h3>
+                        <p>Learning from industry experts</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/202112.jpg" alt="Robot Design">
+                    <div class="gallery-overlay">
+                        <h3>Creative Design</h3>
+                        <p>Innovative robot prototypes</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/202121.jpg" alt="Programming Session">
+                    <div class="gallery-overlay">
+                        <h3>Programming Excellence</h3>
+                        <p>Coding the future of robotics</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/202122.jpg" alt="Testing Phase">
+                    <div class="gallery-overlay">
+                        <h3>Testing & Iteration</h3>
+                        <p>Refining robot performance</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/202125.jpg" alt="Awards Ceremony">
+                    <div class="gallery-overlay">
+                        <h3>Celebrating Success</h3>
+                        <p>Recognizing outstanding achievements</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/2021127.jpg" alt="International Teams">
+                    <div class="gallery-overlay">
+                        <h3>Global Community</h3>
+                        <p>Teams from across Europe</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/2021133.jpg" alt="Innovation Lab">
+                    <div class="gallery-overlay">
+                        <h3>Innovation Lab</h3>
+                        <p>State-of-the-art facilities</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/2023102.jpg" alt="Future Tech">
+                    <div class="gallery-overlay">
+                        <h3>Future Technology</h3>
+                        <p>Exploring tomorrow's innovations</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/2023113.jpg" alt="Team Strategy">
+                    <div class="gallery-overlay">
+                        <h3>Strategic Planning</h3>
+                        <p>Developing winning strategies</p>
+                    </div>
+                </div>
+                <div class="gallery-item scroll-reveal">
+                    <img src="./images/2023112.jpg" alt="Mentorship">
+                    <div class="gallery-overlay">
+                        <h3>Expert Mentorship</h3>
+                        <p>Guidance from industry professionals</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Section -->
+    <section class="feedback-section" id="feedback">
+        <div class="section-container">
+            <span class="section-label">Testimonials</span>
+            <h2 class="section-title">What People Say</h2>
+            <p class="section-subtitle">Hear from participants who've experienced RobEurope firsthand</p>
+
+            <div class="feedback-grid" id="feedback-grid"></div>
+
+            <div class="feedback-controls">
+                <button class="btn btn-primary" id="add-feedback-btn">Add Feedback</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Feedback Modal -->
+    <div class="modal" id="feedback-modal">
+        <div class="modal-backdrop"></div>
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <h2 id="modal-title">Add Feedback</h2>
+            <form id="feedback-form">
+                <input type="hidden" id="feedback-id">
+                <div class="form-group">
+                    <label for="feedback-author">Your Name</label>
+                    <input type="text" id="feedback-author" maxlength="50">
+                </div>
+                <div class="form-group">
+                    <label for="feedback-text">Your Feedback</label>
+                    <textarea id="feedback-text" maxlength="500" rows="5"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Submit</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contact">
+        <canvas id="contact-canvas"></canvas>
+        <div class="section-container">
+            <div class="contact-content">
+                <span class="section-label">Get in Touch</span>
+                <h2 class="section-title">Send Us a Message</h2>
+                <p class="contact-subtitle">
+                    For any questions or inquiries regarding RobEurope, feel free to reach out to us using this form.
+                </p>
+                <form class="contact-form" id="contact-form">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <input type="text" name="firstName" placeholder="First Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="lastName" placeholder="Last Name">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="email" placeholder="Email">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Write your message" rows="6"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Submit</button>
+                </form>
+            </div>
+            <div class="contact-image">
+                <img src="./images/picture6.jpg" alt="RobEurope Team">
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-brand">
+                <div class="footer-logo">
+                    <span class="logo-rob">ROB</span><span class="logo-europe">EUROPE</span>
+                </div>
+                <p>Inspiring young minds across Europe through robotics and innovation.</p>
+            </div>
+            <div class="footer-links">
+                <div class="footer-column">
+                    <h4>Navigation</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#gallery">Gallery</a></li>
+                        <li><a href="#feedback">Feedback</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Contact</h4>
+                    <ul>
+                        <li>+12 345 67 89</li>
+                        <li>robeurope@mail.com</li>
+                        <li>Canary Islands, Spain</li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h4>Social</h4>
+                    <div class="social-links">
+                        <a href="#" aria-label="YouTube">
+                            <img src="./images/youtubeicon.png" alt="YouTube">
+                        </a>
+                        <a href="#" aria-label="Instagram">
+                            <img src="./images/instagramlogo.png" alt="Instagram">
+                        </a>
+                        <a href="#" aria-label="TikTok">
+                            <img src="./images/tiktokicon.png" alt="TikTok">
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 RobEurope. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Enhanced Side Menu -->
+    <div class="side-menu" id="side-menu">
+        <div class="side-menu-header">
+            <div class="side-menu-logo">
+                <span class="logo-rob">ROB</span><span class="logo-europe">EUROPE</span>
+            </div>
+            <button class="side-menu-close" id="side-menu-close">&times;</button>
+        </div>
+        <nav class="side-menu-nav">
+            <a href="#home" class="side-menu-link" data-index="0">Home</a>
+            <a href="#videos" class="side-menu-link" data-index="1">Videos</a>
+            <a href="#about" class="side-menu-link" data-index="2">About</a>
+            <a href="#gallery" class="side-menu-link" data-index="3">Gallery</a>
+            <a href="#feedback" class="side-menu-link" data-index="4">Feedback</a>
+            <a href="#contact" class="side-menu-link" data-index="5">Contact</a>
+        </nav>
+        <div class="side-menu-footer">
+            <div class="side-menu-contact">
+                <h4>Get in Touch</h4>
+                <p>+12 345 67 89</p>
+                <p>robeurope@mail.com</p>
+                <p>Canary Islands, Spain</p>
+            </div>
+            <div class="side-menu-social">
+                <a href="#" aria-label="YouTube">
+                    <img src="./images/youtubeicon.png" alt="YouTube">
+                </a>
+                <a href="#" aria-label="Instagram">
+                    <img src="./images/instagramlogo.png" alt="Instagram">
+                </a>
+                <a href="#" aria-label="TikTok">
+                    <img src="./images/tiktokicon.png" alt="TikTok">
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="menu-overlay" id="menu-overlay"></div>
+
+    <!-- Nota para tiburcio: que no me preocupe por el formato de estos ficheros por ser la última entrega -->
+    <script src="./javascript/ParticleAnimation.js"></script>
+    <script src="./javascript/Navigation.js"></script>
+    <script src="./javascript/HeroParallax.js"></script>
+    <script src="./javascript/VideoCarousel.js"></script>
+    <script src="./javascript/ScrollAnimations.js"></script>
+    <script src="./javascript/AboutScrollAnimation.js"></script>
+    <script src="./javascript/FeedbackManager.js"></script>
+    <script src="./javascript/ContactForm.js"></script>
+</body>
+
+</html>
