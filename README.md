@@ -4,7 +4,7 @@ Robeurope.com is a dedicated webpage showcasing robotics events from educational
 
 ## Design Inspiration
 
-The site's modern, responsive design draws inspiration from [Google Antigravity](https://www.landing.love/sites/antigravity/), emphasizing clean layouts, AI-assisted visuals, and interactive elements for an engaging user experience. This approach ensures mobile-friendliness, fast loading, and accessibility, mirroring Antigravity's agentic development style with hero sections and seamless navigation.
+The site's modern, responsive design draws inspiration from [Google Antigravity](https://www.landing.love/sites/antigravity/), emphasizing clean layouts, subtle visual animations and interactive responsive elements for an engaging user experience. This approach ensures mobile-friendliness, fast loading, and accessibility, mirroring Antigravity's agentic development style with hero sections and seamless navigation.
 
 ## Technologies
 
